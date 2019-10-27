@@ -50,14 +50,17 @@
   };
 </script>
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="Bookmark for NexT  Introduce  Bookmark is a plugin that allow the users save their reading position. The users could just click the bookmark icon (like 🔖) in left-top of the page to save the position">
+<meta property="og:type" content="website">
 <meta property="og:title" content="SAOKA的博客">
-<meta property="og:url" content="https:&#x2F;&#x2F;saokaljt.github.io&#x2F;blog&#x2F;archives&#x2F;2019&#x2F;index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;saokaljt.github.io&#x2F;blog&#x2F;lib&#x2F;bookmark&#x2F;README.html">
 <meta property="og:site_name" content="SAOKA的博客">
+<meta property="og:description" content="Bookmark for NexT  Introduce  Bookmark is a plugin that allow the users save their reading position. The users could just click the bookmark icon (like 🔖) in left-top of the page to save the position">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-27T07:11:33.456Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://saokaljt.github.io/blog/archives/2019/">
+<link rel="canonical" href="https://saokaljt.github.io/blog/lib/bookmark/README">
 
 
 <script id="page-configurations">
@@ -66,12 +69,13 @@
     sidebar: "",
     isHome: false,
     isPost: false,
-    isPage: false,
-    isArchive: true
+    isPage: true,
+    isArchive: false
   };
 </script>
 
-  <title>归档 | SAOKA的博客</title>
+  <title> | SAOKA的博客
+  </title>
   
 
 
@@ -196,73 +200,91 @@
       <div class="main-inner">
         <div class="content-wrap">
           
+  
+  
 
           <div class="content">
             
 
+  <div class="posts-expand">
+    
+    
+    
+    <div class="post-block" lang="zh-CN">
+      <header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">
+</h1>
+
+<div class="post-meta">
   
-  
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
-      </div>
+  <ul class="breadcrumb">
+          
+            <li><a href="/blog/lib/">LIB</a></li>
+            <li><a href="/blog/lib/bookmark/">BOOKMARK</a></li>
+            <li>README</li>
+          
+  </ul>
+
+</div>
+
+</header>
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
+      
+      
+      <div class="post-body">
+          <h1 align="center">Bookmark for <a href="https://github.com/theme-next" target="_blank" rel="noopener">NexT</a></h1>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+<h2 align="center">Introduce</h2>
 
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-10-13T19:54:14+08:00"
-              content="2019-10-13">
-          10-13
-        </time>
+<p>Bookmark is a plugin that allow the users save their reading position.</p>
+<p>The users could just click the bookmark icon (like 🔖) in left-top of the page to save the position.</p>
+<p>And when they visit your blog in the next time, they can continue the last reading position by clicking the bookmark icon from the home page.</p>
+<h1 align="center">Installation</h1>
+
+<h2>If you want to use the CDN instead of clone this repo, please jump to the Step 3.</h2>
+
+<h2 align="center">Step 1 &rarr; Go to NexT dir</h2>
+
+<p>Change dir to <strong>NexT</strong> directory. There must be <code>layout</code>, <code>source</code>, <code>languages</code> and other directories:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ ls</span><br><span class="line">bower.json  _config.yml  docs  gulpfile.coffee  languages  layout  LICENSE.md  package.json  README.md  scripts  <span class="built_in">source</span>  <span class="built_in">test</span></span><br></pre></td></tr></table></figure>
+
+<h2 align="center">Step 2 &rarr; Get module</h2>
+
+<p>Install module to <code>source/lib</code> directory:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-bookmark.git <span class="built_in">source</span>/lib/bookmark</span><br></pre></td></tr></table></figure>
+
+<h2 align="center">Step 3 &rarr; Set it up</h2>
+
+<p>Enable module in <strong>NexT</strong> <code>_config.yml</code> file:</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">bookmark:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>And, if you wants to use the CDN, then need to set:</strong></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="string">...</span></span><br><span class="line"><span class="attr">  bookmark:</span> <span class="attr">https://cdn.jsdelivr.net/gh/theme-next/theme-next-bookmark@latest/bookmark.min.js</span></span><br></pre></td></tr></table></figure>
+
+<h1 align="center">Update</h1>
+
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next/<span class="built_in">source</span>/lib/bookmark</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
+
       </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/blog/2019/10/13/%E7%BA%BF%E6%AE%B5%E6%A0%91/" itemprop="url">
-            <span itemprop="name">线段树</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-10-13T19:01:47+08:00"
-              content="2019-10-13">
-          10-13
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/blog/2019/10/13/%E5%88%9D%E8%B5%9B%E5%A4%8D%E4%B9%A0/" itemprop="url">
-            <span itemprop="name">初赛复习</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-
+      
+      
+      
     </div>
+    
+  <ul class="breadcrumb">
+          
+            <li><a href="/blog/lib/">LIB</a></li>
+            <li><a href="/blog/lib/bookmark/">BOOKMARK</a></li>
+            <li>README</li>
+          
+  </ul>
+
+    
+    
+    
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
